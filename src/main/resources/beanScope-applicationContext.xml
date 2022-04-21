@@ -12,7 +12,8 @@
     </bean>
 
     <bean id="myCoach"
-          class="spring.course.TrackCoach">
+          class="spring.course.TrackCoach"
+   scope="prototype">
     <constructor-arg ref="myFortuneService"/>
     </bean>
 

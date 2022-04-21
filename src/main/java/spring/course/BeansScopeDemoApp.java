@@ -16,7 +16,9 @@ public class BeansScopeDemoApp {
 
         boolean result = (theCoach == alphaCoach);
 
-        System.out.println(result);
+        System.out.println("\nPointing " + result);
+        System.out.println("\nMemorry location: " + theCoach);
+        System.out.println("\nMemorry location: " + alphaCoach);
 
         context.close();
 
