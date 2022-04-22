@@ -2,19 +2,19 @@ package spring.course;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class BeansLifeCycleDemoApp {
-
+public class AnnotationDemoApp {
     public static void main(String[] args) {
-
-        //load conf/ file
+        //read spring config
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("beanLifeCycle-applicationContext.xml");
-
-        Coach theCoach = context.getBean("myCoach", Coach.class);
-
+                new ClassPathXmlApplicationContext("applicationContext.xml");
+        //get bean
+        Coach theCoach = context.getBean("tennisCoach", Coach.class);
+        //call method
         System.out.println(theCoach.getDailyWorkout());
 
+        //close
         context.close();
+
 
     }
 }
