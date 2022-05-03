@@ -3,6 +3,7 @@ package spring.course;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Locale;
@@ -41,6 +42,25 @@ public class HelloWorldConrtoller {
 
 
         return "helloworld";
-
     }
+
+    @RequestMapping("/processFormVersionThree")
+    public String processFormVersionThree(@RequestParam("studentName") String theName,
+                                          Model model) {
+
+        //convert
+        theName = theName.toUpperCase();
+
+        //create model
+        String result = "Yo!  " + theName;
+
+        //add message
+        model.addAttribute("message", result);
+
+
+        return "helloworld";
+    }
+
+
+
 }
