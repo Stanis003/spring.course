@@ -1,16 +1,11 @@
 package spring.course;
 
-
-import java.util.LinkedHashMap;
-
 public class Student {
 
     private String firstName;
-    private String  lastname;
+    private String lastname;
     private String country;
-
-
-
+    private String favoritelanguage;
 
     public Student() {
 
@@ -32,6 +27,15 @@ public class Student {
         this.lastname = lastname;
     }
 
+
+    public String getFavoritelanguage() {
+        return favoritelanguage;
+    }
+
+    public void setFavoritelanguage(String favoritelanguage) {
+        this.favoritelanguage = favoritelanguage;
+    }
+
     public String getCountry() {
         return country;
     }
@@ -39,6 +43,4 @@ public class Student {
     public void setCountry(String country) {
         this.country = country;
     }
-
-
 }

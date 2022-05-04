@@ -31,6 +31,9 @@
 
 <util:properties id="countryOptions"
 				 location="classpath:countries.properties"/>
+	<util:properties id="favouritelanguage"
+					 location="classpath:languages.properties"/>
+
 
 </beans>
 
