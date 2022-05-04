@@ -9,17 +9,11 @@ public class Student {
     private String  lastname;
     private String country;
 
-    private LinkedHashMap<String, String> countryoptions;
+
 
 
     public Student() {
-        countryoptions = new LinkedHashMap<>();
 
-        countryoptions.put("BR", "Brazil");
-        countryoptions.put("GR", "Germany");
-        countryoptions.put("FR", "France");
-        countryoptions.put("IT", "Italy");
-        countryoptions.put("UC", "Uckraine");
     }
 
     public String getFirstName() {
@@ -44,10 +38,6 @@ public class Student {
 
     public void setCountry(String country) {
         this.country = country;
-    }
-
-    public LinkedHashMap<String, String> getCountryoptions() {
-        return countryoptions;
     }
 
 
