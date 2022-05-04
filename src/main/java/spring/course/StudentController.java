@@ -25,7 +25,7 @@ public class StudentController {
         theModel.addAttribute("theCountryOptions", countryOtions);
 
         //add languages
-        theModel.addAttribute("theFavouriteLanguage", favouritelanguage);
+        theModel.addAttribute("theFavouriteLanguage", favouriteLanguage);
 
         return "student-form";
     }
@@ -39,7 +39,7 @@ public class StudentController {
     @Value("#{countryOptions}")
     private Map<String, String> countryOtions;
 
-    @Value("#{favouritelanguage}")
-    private Map<String,String> favouritelanguage;
+    @Value("#{favouriteLanguage}")
+    private Map<String,String> favouriteLanguage;
 
 }

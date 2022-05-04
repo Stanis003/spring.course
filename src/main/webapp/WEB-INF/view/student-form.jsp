@@ -23,9 +23,15 @@ Country:
         <form:options items="${theCountryOptions}"/>
     </form:select>
     <br><br>
-    favorite Langugage:
+    Favorite Langugage:
 
    <form:radiobuttons path="favoritelanguage" items="${theFavouriteLanguage}"/>
+    <br><br>
+
+    Operating Systems
+   Linux <form:checkbox path="operatingSystems" value="Linux"/>
+    Mac OS <form:checkbox path="operatingSystems" value="Mac OC"/>
+    MS Windows <form:checkbox path="operatingSystems" value="MS Windows"/>
 
     <br><br>
     <input type="submit" value="Submit"/>

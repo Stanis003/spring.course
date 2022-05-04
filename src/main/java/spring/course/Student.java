@@ -5,7 +5,8 @@ public class Student {
     private String firstName;
     private String lastname;
     private String country;
-    private String favoritelanguage;
+    private String favoriteLanguage;
+    private String [] operatingSystems;
 
     public Student() {
 
@@ -29,11 +30,11 @@ public class Student {
 
 
     public String getFavoritelanguage() {
-        return favoritelanguage;
+        return favoriteLanguage;
     }
 
     public void setFavoritelanguage(String favoritelanguage) {
-        this.favoritelanguage = favoritelanguage;
+        this.favoriteLanguage = favoritelanguage;
     }
 
     public String getCountry() {
@@ -42,5 +43,13 @@ public class Student {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public String[] getOperatingSystems() {
+        return operatingSystems;
+    }
+
+    public void setOperatingSystems(String[] operatingSystems) {
+        this.operatingSystems = operatingSystems;
     }
 }
