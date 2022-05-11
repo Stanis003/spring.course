@@ -33,7 +33,10 @@
                      location="classpath:countries.properties"/>
     <util:properties id="favouriteLanguage"
                      location="classpath:languages.properties"/>
-
+<bean id="messageSource"
+      class="org.springframework.context.support.ResourceBundleMessageSource">
+    <property name="basename" value="messages"/>
+</bean>
 
 </beans>
 
